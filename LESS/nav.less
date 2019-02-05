@@ -1,5 +1,28 @@
 nav{
+    padding: 1% 0;
     display: flex;
     justify-content: space-evenly;
-    padding: 1% 0;
+    align-items: center;
+
+    @media @tablet{
+        .hamburger{
+            display: none;
+        }
+    }
 }
+
+nav a{
+    display: none;
+    font-size: 1.7rem;
+
+    @media @tablet{
+        display: block;
+    }
+}
+
+nav h4{
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
