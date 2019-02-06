@@ -1,9 +1,8 @@
 
 const openMenu = () => {
-    // Toggle the "menu--open" class on your menu refence. 
     menu.classList.toggle('menu-open')
+    TweenMax.from(menu, .7, {y: -15})
   }
-
 
 const menu = document.querySelector('.menu');
 console.log(menu);

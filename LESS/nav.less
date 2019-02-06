@@ -1,6 +1,10 @@
 
 .menu{
     background: @color4;
+    display: none;  
+    @media @tablet{
+        display: block;
+    }
 
     nav{
         display: flex;
@@ -27,12 +31,16 @@
     }
 
     nav a{
-        margin-bottom: 30px;
+        margin-bottom: 1%;
         font-size: 2.5rem;
         letter-spacing: 1px;
         text-decoration: none;
         font-family: 'Patrick Hand SC';
         color: white;
+
+        &:hover{
+            color: @color3;
+        }
 
     }
 
@@ -46,13 +54,13 @@
     }
 }
 
-.menu{
-    display: none;
+// .menu{
+//     display: none;
     
-    @media @tablet{
-        display: block;
-    }
-}
+//     @media @tablet{
+//         display: block;
+//     }
+// }
 
 .menu-open{
     display: block;
