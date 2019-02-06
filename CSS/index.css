@@ -139,52 +139,75 @@ h2 {
 p {
   font-size: 2.2rem;
   font-family: 'Patrick Hand SC';
-  margin-bottom: 3%;
 }
 .info-container {
   margin: 0 auto;
 }
-nav {
+.menu {
+  background: #000E48;
+}
+.menu nav {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  margin-top: 2%;
+  color: white;
 }
 @media (min-width: 800px) {
-  nav .hamburger {
+  .menu nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+@media (min-width: 1000px) {
+  .menu nav {
+    margin-top: 1%;
+  }
+}
+@media (min-width: 800px) {
+  .menu nav .hamburger {
     display: none;
   }
 }
-@media (min-width: 800px) and (min-width: 1000px) {
-  nav {
-    padding: 1%;
-  }
-}
-nav a {
-  display: none;
+.menu nav a {
+  margin-bottom: 30px;
   font-size: 2.5rem;
   letter-spacing: 1px;
   text-decoration: none;
   font-family: 'Patrick Hand SC';
+  color: white;
 }
-@media (min-width: 800px) {
-  nav a {
-    display: block;
-  }
-}
-nav h4 {
+.menu nav h4 {
   font-size: 2.5rem;
   margin-right: 10%;
 }
 @media (min-width: 1000px) {
-  nav h4 {
+  .menu nav h4 {
     display: none;
   }
+}
+.menu {
+  display: none;
+}
+@media (min-width: 800px) {
+  .menu {
+    display: block;
+  }
+}
+.menu-open {
+  display: block;
+}
+.hamburger {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
 }
 .carousel {
   display: flex;
   margin-bottom: 2%;
   justify-content: center;
-  height: 50%;
+  height: 30%;
   position: relative;
   overflow: hidden;
 }
@@ -211,10 +234,20 @@ nav h4 {
   left: 35px;
   transform: translate(0, -55%);
 }
+@media (min-width: 800px) {
+  .carousel .left-button {
+    left: 30px;
+  }
+}
 .carousel .right-button {
   top: 50%;
   right: 35px;
   transform: translate(0, -50%);
+}
+@media (min-width: 800px) {
+  .carousel .right-button {
+    right: 30px;
+  }
 }
 .carousel img {
   width: 85%;
@@ -224,6 +257,20 @@ nav h4 {
 .info-container {
   display: flex;
   flex-flow: column wrap;
+}
+.info-container .header {
+  background: #000E48;
+  padding: 1.5%;
+  color: white;
+}
+.info-container .header h4 {
+  font-size: 3rem;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .info-container .header {
+    display: none;
+  }
 }
 .info-container .top-contentBG {
   display: flex;
@@ -241,7 +288,7 @@ nav h4 {
 }
 @media (min-width: 1000px) {
   .info-container .top-content {
-    height: 90%;
+    height: 100%;
   }
 }
 .info-container .top-content h1 {
@@ -277,6 +324,7 @@ nav h4 {
   justify-content: center;
   flex-flow: column wrap;
   margin: 0 5%;
+  padding-top: 2%;
 }
 .info-container .left-content img {
   display: none;
@@ -346,7 +394,7 @@ nav h4 {
 }
 .info-container .bottom-content {
   margin: 0 18%;
-  padding-top: 2%;
+  padding: 2% 0;
 }
 .download-now {
   text-align: center;

@@ -2,7 +2,7 @@
     display: flex;
     margin-bottom: 2%;
     justify-content: center;
-    height: 50%;
+    height: 30%;
     position: relative;
     overflow: hidden;
     @media @desktop{
@@ -23,11 +23,19 @@
       top: 50%; 
       left: 35px;
       transform: translate(0, -55%);
+
+      @media @tablet{
+        left: 30px;
+      }
     }
     .right-button {
       top: 50%; 
       right: 35px;
       transform: translate(0, -50%);
+
+      @media @tablet{
+        right: 30px;
+      }
     }
     img {
       width: 85%;
