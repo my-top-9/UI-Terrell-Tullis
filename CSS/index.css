@@ -131,18 +131,20 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-family: 'Fugaz One', cursive;
 }
 h2 {
   font-size: 3rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-family: 'Patrick Hand SC';
+  margin-bottom: 3%;
 }
 .info-container {
   margin: 0 auto;
 }
 nav {
-  padding: 1% 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -152,9 +154,17 @@ nav {
     display: none;
   }
 }
+@media (min-width: 800px) and (min-width: 1000px) {
+  nav {
+    padding: 1%;
+  }
+}
 nav a {
   display: none;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: 'Patrick Hand SC';
 }
 @media (min-width: 800px) {
   nav a {
@@ -162,8 +172,54 @@ nav a {
   }
 }
 nav h4 {
-  text-align: center;
   font-size: 2.5rem;
+  margin-right: 10%;
+}
+@media (min-width: 1000px) {
+  nav h4 {
+    display: none;
+  }
+}
+.carousel {
+  display: flex;
+  margin-bottom: 2%;
+  justify-content: center;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 1000px) {
+  .carousel {
+    width: 70%;
+    margin: 2% auto;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  color: #ED3D67;
+  font-size: 6.5rem;
+  border-radius: 20%;
+  position: absolute;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #000E48;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 35px;
+  transform: translate(0, -55%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 35px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 85%;
+  border-radius: 20px;
+  display: none;
 }
 .info-container {
   display: flex;
@@ -179,38 +235,53 @@ nav h4 {
   justify-content: space-evenly;
   align-items: center;
   padding: 3% 0;
-  background: linear-gradient(150deg, #9CE5F0, #4B3690 50%, #ED3D67);
+  background: linear-gradient(150deg, #000E48, #4B3690 50%, #ED3D67);
   opacity: 0.7;
   height: 100%;
 }
 @media (min-width: 1000px) {
   .info-container .top-content {
-    height: 70%;
+    height: 90%;
   }
 }
 .info-container .top-content h1 {
-  color: aqua;
+  color: white;
   font-size: 4rem;
+}
+@media (min-width: 1000px) {
+  .info-container .top-content h1 {
+    font-size: 5rem;
+    letter-spacing: 8px;
+  }
 }
 .info-container .top-content button {
   padding: 2px 30px;
   border-radius: 15px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 10%;
   border-color: #9CE5F0;
   width: 60%;
+  font-family: 'Patrick Hand SC';
+}
+.info-container .main-content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .info-container .main-content {
+    flex-direction: row;
+  }
 }
 .info-container .left-content {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
   margin: 0 5%;
-  padding-top: 3%;
 }
 .info-container .left-content img {
   display: none;
-  width: 300px;
-  height: 240px;
+  width: 85%;
+  height: 50%;
   border-radius: 5px;
 }
 @media (min-width: 800px) {
@@ -234,6 +305,7 @@ nav h4 {
   padding: 1.5%;
   border-radius: 15px;
   border-color: #ED3D67;
+  font-family: 'Patrick Hand SC';
 }
 .info-container .right-content {
   display: flex;
@@ -244,14 +316,14 @@ nav h4 {
 }
 .info-container img {
   display: none;
-  width: 300px;
-  height: 240px;
+  width: 85%;
+  height: 50%;
+  margin: 0 auto;
   border-radius: 5px;
 }
 @media (min-width: 800px) {
   .info-container img {
     display: block;
-    margin: 10% 2%;
   }
 }
 @media (min-width: 1000px) {
@@ -269,22 +341,19 @@ nav h4 {
   padding: 1.5%;
   border-radius: 15px;
   border-color: #4B3690;
+  font-family: 'Patrick Hand SC';
+  font-size: 2rem;
 }
-.bottom-content {
-  margin: 0 5%;
+.info-container .bottom-content {
+  margin: 0 18%;
   padding-top: 2%;
 }
 .download-now {
-  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
 }
 @media (min-width: 800px) {
   .download-now {
     display: none;
-  }
-}
-@media (min-width: 800px) {
-  .main-content {
-    display: flex;
-    flex-direction: row;
   }
 }

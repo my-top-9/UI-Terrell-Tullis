@@ -14,40 +14,53 @@
         justify-content: space-evenly;
         align-items: center;
         padding: 3% 0;
-        background: linear-gradient(150deg, @color1, @color2 50%, @color3);
+        background: linear-gradient(150deg, @color4, @color2 50%, @color3);
         opacity: .7;
         height: 100%;
 
         @media @desktop{
-            height: 70%;
+            height: 90%;
         }
 
     h1{
-        color: aqua;
+        color: white;
         font-size: 4rem;
+
+        @media @desktop{
+            font-size: 5rem;
+            letter-spacing: 8px;
+        }
     }
 
     button{
         padding: 2px 30px;
         border-radius: 15px;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-top: 10%;
         border-color: @color1;
         width: 60%;
+        font-family: 'Patrick Hand SC';
     }
 }
+     .main-content{
+         display: flex;
+        flex-direction: column;
+         @media @desktop{
+            flex-direction: row;
+        }
+     }
+
 
     .left-content{
         display: flex;
         justify-content: center;
         flex-flow: column wrap;
         margin: 0 5%;
-        padding-top: 3%;
 
         img{
             display: none;
-            width: 300px;
-            height: 240px;
+            width: 85%;
+            height: 50%;
             border-radius: 5px;
 
             @media @tablet{
@@ -70,6 +83,7 @@
             padding: 1.5%;
             border-radius: 15px;
             border-color: @color3;
+            font-family: 'Patrick Hand SC';
         }
     }
 
@@ -83,13 +97,14 @@
         }
         img{
             display: none;
-            width: 300px;
-            height: 240px;
+            width: 85%;
+            height: 50%;
+            margin: 0 auto;
             border-radius: 5px;
             
             @media @tablet{
                 display: block;
-                margin: 10% 2%;
+
             }
 
             @media @desktop{
@@ -106,26 +121,22 @@
              margin: 4% 25%;
              padding: 1.5%;
              border-radius: 15px;
-             border-color: @color2;
-        }
-    }
+             border-color: @color2; 
+             font-family: 'Patrick Hand SC';
+             font-size: 2rem;
+            }
 
     .bottom-content{
-        margin: 0 5%;
+        margin: 0 18%;
         padding-top: 2%;
     }
 
-    .download-now{
-        margin: 0 auto;
-
-        @media @tablet{
-            display: none;
+}
+        .download-now{
+            text-align: center;
+            margin-top: 10%;
+            @media @tablet{
+                display: none;
+            }
         }
-    }
 
-    @media @tablet {
-        .main-content{
-            display: flex;
-            flex-direction: row;
-        }
-    }
