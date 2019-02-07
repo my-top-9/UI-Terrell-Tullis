@@ -1,4 +1,3 @@
-
 const openMenu = () => {
     menu.classList.toggle('menu-open')
     TweenMax.from(menu, .7, {y: -60})
