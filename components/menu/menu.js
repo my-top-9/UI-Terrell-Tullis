@@ -1,7 +1,7 @@
 
 const openMenu = () => {
     menu.classList.toggle('menu-open')
-    TweenMax.from(menu, .7, {y: -15})
+    TweenMax.from(menu, .7, {y: -60})
   }
 
 const menu = document.querySelector('.menu');
