@@ -443,12 +443,18 @@ p {
 }
 .download-now {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
   margin-top: 10%;
 }
 @media (min-width: 800px) {
   .download-now {
     display: none;
   }
+}
+footer {
+  text-align: center;
+  margin-top: 4%;
 }
 h1 {
   font-size: 4rem;
