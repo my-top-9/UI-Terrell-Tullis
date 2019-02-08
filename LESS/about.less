@@ -1,13 +1,72 @@
-h1{
-    font-size: 4rem;
-    text-align: center;
+ h1{
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 3%;
+        color: @color3;
 }
 
-h3{
-    font-size: 2.5rem;
+.header{
+    background: @color4;
+    padding: 1.5%;
+    color: white;
+    h4{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    @media @tablet{
+        display: none;
+    }
 }
 
-h4{
-    font-size: 1.5rem;
+.members-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0% 3%;
+    flex-wrap: wrap;
+    width: 90%;
+    
+    @media @desktop{
+        flex-direction: row;
+    }
+
+
+    .member{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 2%;
+    color: black;
+    padding: 2%;
+    width: 100%;
+
+    
+    a{
+        cursor: pointer;
+    }
+    @media @desktop{
+        width: 30%;
+    }
+}
+
+
+
+    h3{
+        font-size: 2.5rem;
+        color: @color4;
+    }
+
+    h4{
+        font-size: 1.8rem;
+        text-align: center;
+        color: @color2;
+        margin-top: 2%;
+    }
+
+    p{
+        margin-top: 2%; 
+    }
+
 }
 

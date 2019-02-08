@@ -2,13 +2,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Boogaloo|Fugaz+One|Lalezar|Patrick+Hand+SC" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="./components/menu/menu.js" async></script>
+    <script src="./components/about/about.js" async></script>
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Us</title>
 </head>
 <body>
+        <div class='header'>
+                <i class="fas fa-hamburger fa-3x hamburger"></i>
+                <h4>My Top Nine</h4>
+        </div>
+        
         <div class= 'menu'>
                 <nav>
                     <a href="./index.html">Home</a>
@@ -16,12 +25,14 @@
                     <a href="#">Careers</a>
                 </nav>
             </div>
-            <section class = 'about-content'>
-                <h1>Meet the team!</h1>
-                <div class='team'></div>
-                <h3>Terrell Tullis</h3>
+            <h1>Meet the team!</h1>
+            <section class = 'members-container'>
+                <div class='member'>
+                <h3>Brian Ruff</h3>
                 <h4>
-                    Role: UI Dev 
+                    Role: Scrum Master 
+                    <br>
+                    <a href = 'https://github.com/my-top-9' target='_blank'>Github Repo</a>
                 </h4>
                 <p>
                     A little about me:
@@ -30,6 +41,98 @@
                     dolores ad neque nihil rem provident, ea fugiat. Voluptatem, beatae animi. 
                     Possimus, asperiores.
                 </p>
-            </section>
+                </div>
+                <div class='member'>
+                    <h3>Joshua Disney</h3>
+                    <h4>
+                        Role: Front End Architect
+                        <br>
+                        <a href = 'https://github.com/my-top-9/Front-End-Josh-DIsney' target='_blank'>Github Repo</a>
+                    </h4>
+                    <p>
+                        A little about me:
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime ducimus distinctio ipsum illo praesentium eum fuga culpa 
+                        dolores ad neque nihil rem provident, ea fugiat. Voluptatem, beatae animi. 
+                        Possimus, asperiores.
+                    </p>
+                </div>
+
+                <div class='member'>
+                    <h3>Chelsea Tolnai</h3>
+                    <h4>
+                        Role: Front End Architect 
+                        <br>
+                        <a href = 'https://github.com/my-top-9/Front-End-Chelsea-Tolnai' target='_blank'>Github Repo</a>
+                    </h4>
+                    <p>
+                        A little about me:
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime ducimus distinctio ipsum illo praesentium eum fuga culpa 
+                        dolores ad neque nihil rem provident, ea fugiat. Voluptatem, beatae animi. 
+                        Possimus, asperiores.
+                    </p>
+                </div>
+                <div class='member'>
+                        <h3>Tyrone Cartwright</h3>
+                        <h4>
+                            Role: Back End Architect 
+                            <br>
+                            <a href = 'https://github.com/my-top-9/Back-End-Tyrone-Cartwright' target='_blank'>Github Repo</a>
+                        </h4>
+                        <p>
+                            A little about me:
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ducimus distinctio ipsum illo praesentium eum fuga culpa 
+                            dolores ad neque nihil rem provident, ea fugiat. Voluptatem, beatae animi. 
+                            Possimus, asperiores.
+                        </p>
+                    </div>
+                    <div class='member'>
+                            <h3>Terrell Tullis</h3>
+                            <h4>
+                                Role: UI Dev 
+                                <br>
+                                <a href = 'https://github.com/my-top-9/UI-Terrell-Tullis' target='_blank'>Github Repo</a>
+                            </h4>
+                            <p>
+                                A little about me:
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ducimus distinctio ipsum illo praesentium eum fuga culpa 
+                                dolores ad neque nihil rem provident, ea fugiat. Voluptatem, beatae animi. 
+                                Possimus, asperiores.
+                            </p>
+                        </div>
+                        <div class='member'>
+                                <h3>Thomas Hessburg</h3>
+                                <h4>
+                                    Role: UI Dev 
+                                    <br>
+                                    <a href = 'https://github.com/my-top-9/UI-Thomas-Hessburg' target='_blank'>Github Repo</a>
+                                </h4>
+                                <p>
+                                    A little about me:
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime ducimus distinctio ipsum illo praesentium eum fuga culpa 
+                                    dolores ad neque nihil rem provident, ea fugiat. Voluptatem, beatae animi. 
+                                    Possimus, asperiores.
+                                </p>
+                            </div>
+                            <div class='member'>
+                                    <h3>Victor Goico</h3>
+                                    <h4>
+                                        Role: UI Dev 
+                                        <br>
+                                        <a href = 'https://github.com/my-top-9/UI-Victor-Goico' target='_blank'>Github Repo</a>
+                                    </h4>
+                                    <p>
+                                        A little about me:
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Maxime ducimus distinctio ipsum illo praesentium eum fuga culpa 
+                                        dolores ad neque nihil rem provident, ea fugiat. Voluptatem, beatae animi. 
+                                        Possimus, asperiores.
+                                    </p>
+                                </div>
+                            </section>
 </body>
 </html>

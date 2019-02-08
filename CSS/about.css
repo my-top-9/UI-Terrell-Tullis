@@ -1,3 +1,29 @@
 h1 {
   font-size: 4rem;
+  text-align: center;
+  margin-top: 3%;
+}
+.members-container {
+  display: flex;
+  justify-content: center;
+  margin: 0% 3%;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.members-container .member {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 2%;
+  color: blue;
+  padding: 2%;
+  width: 30%;
+}
+.members-container h3 {
+  font-size: 2.5rem;
+  color: blue;
+}
+.members-container h4 {
+  font-size: 1.5rem;
+  text-align: center;
 }
